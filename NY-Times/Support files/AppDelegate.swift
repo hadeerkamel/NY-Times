@@ -10,12 +10,24 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    static var window: UIWindow?
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        setRootViewController()
+        UIConstants.setupNavigationBar()
         return true
     }
-
+    
+     private func setRootViewController(){
+        DispatchQueue.main.async {
+            self.window = UIWindow(frame:UIScreen.main.bounds)
+            self.window?.rootViewController = UIConstants.RootViewController
+            self.window?.makeKeyAndVisible()
+            
+        }
+    }
+    
 
 }
 
