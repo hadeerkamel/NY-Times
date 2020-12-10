@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class ArticlesVC: UIViewController {
 
     //MARK: - Properties -
     var presenter: ArticlesVCPresenter?
+    var activityIdicatorView: NVActivityIndicatorView?
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()

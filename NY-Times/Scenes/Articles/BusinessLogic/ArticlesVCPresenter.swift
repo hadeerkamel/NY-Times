@@ -23,6 +23,7 @@ class ArticlesVCPresenterImpl: ArticlesVCPresenter{
     func presentMostPopularArticles(){
         view.startLoadingAnimation()
         MostPopularEndpoint().execute { (response, error) in
+            self.view.stopLoadingAnimation()
             if let response_ = response , error == nil {
                 self.articles = (response_.results ?? []).map{return ArticleViewModel(model: $0)}
                 self.view.gotMostPopularArticles()

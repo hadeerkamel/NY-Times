@@ -23,9 +23,13 @@ extension ArticlesVC: AtriclesVCViewDelegate{
     }
     
     func startLoadingAnimation(){
-        
+        DispatchQueue.main.async {
+            self.activityIdicatorView = self.showActivityIndicatore(presentingView: self.mainView.tableView)
+        }
     }
     func stopLoadingAnimation(){
-        
+        DispatchQueue.main.async {
+            self.activityIdicatorView?.stopAnimating()
+        }
     }
 }

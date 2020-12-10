@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ArticleTableViewCell: UITableViewCell {
 
@@ -37,7 +38,11 @@ class ArticleTableViewCell: UITableViewCell {
         titleLabel.text = data.title
         dateLabel.text = data.publishedDate
         authorLabel.text = data.byLine
+        sourceLabel.text = data.source
         
+        if let imageURL = data.images.first{
+            self.articleImageView.kf.setImage(with: URL(string: imageURL))
+        }
     }
     
     //MARK: - SetupViews -
@@ -53,19 +58,21 @@ class ArticleTableViewCell: UITableViewCell {
         
         detailsStack.addArrangedSubview(titleLabel)
         detailsStack.addArrangedSubview(authorLabel)
-        detailsStack.addArrangedSubview(dateStack)
+        detailsStack.addArrangedSubview(sourceDateStack)
         
         dateImageView.anchor(size: CGSize(width: 20, height: 20))
         
         dateStack.addArrangedSubview(dateImageView)
         dateStack.addArrangedSubview(dateLabel)
-
+        
+        sourceDateStack.addArrangedSubview(sourceLabel)
+        sourceDateStack.addArrangedSubview(dateStack)
     }
     //MARK: - UIComponents -
     
     private let articleImageView: RoundedImageView = {
         let imageView = RoundedImageView(frame: .zero)
-        imageView.backgroundColor = .gray
+       // imageView.backgroundColor = .gray
         return imageView
     }()
     
@@ -90,6 +97,15 @@ class ArticleTableViewCell: UITableViewCell {
         label.text = "skjdskjdlsdjl"
         return label
     }()
+    
+    private let sourceDateStack: UIStackView = {
+        let stack = UIStackView()
+        stack.axis = .horizontal
+        stack.distribution = .fill
+        stack.spacing = 5
+        return stack
+    }()
+    
     private let dateStack: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
@@ -110,5 +126,13 @@ class ArticleTableViewCell: UITableViewCell {
         imageView.image = #imageLiteral(resourceName: "baseline_calendar_today_white_18pt")
         imageView.tintColor = .lightGray
         return imageView
+    }()
+    
+    private let sourceLabel: UILabel = {
+        let label = UILabel()
+        label.textColor = .lightGray
+        label.font = label.font.withSize(13)
+        label.text = "AnyOne"
+        return label
     }()
 }
