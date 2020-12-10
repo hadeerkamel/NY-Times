@@ -29,4 +29,9 @@ extension ArticlesVC: UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 110
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var vc = ArticleDetailsVC()
+        vc.data = presenter?.getArticleByIndex(index: indexPath.row)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
