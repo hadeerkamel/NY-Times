@@ -12,6 +12,14 @@
 		6B8F118A2581E5F200558884 /* NY_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11892581E5F200558884 /* NY_TimesTests.swift */; };
 		6B8F11952581E5F300558884 /* NY_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11942581E5F300558884 /* NY_TimesUITests.swift */; };
 		6B8F11A92581E68900558884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8F11A82581E68900558884 /* LaunchScreen.storyboard */; };
+		6B8F11C22581F4A400558884 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11C12581F4A400558884 /* RoundedImageView.swift */; };
+		6B8F11CC2581F53B00558884 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11CB2581F53B00558884 /* ArticlesView.swift */; };
+		6B8F11D22581F62500558884 /* CustomAnchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11D12581F62500558884 /* CustomAnchors.swift */; };
+		6B8F11DD2582036A00558884 /* ArticlesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11DC2582036A00558884 /* ArticlesVC.swift */; };
+		6B8F11E6258204C900558884 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11E5258204C900558884 /* UIConstants.swift */; };
+		6B8F11EF25820F8300558884 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */; };
+		6B8F11F72582138B00558884 /* ArticlesVC+TableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */; };
+		6B8F11FC25821D3B00558884 /* ArticlesVCUITEst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +51,14 @@
 		6B8F11942581E5F300558884 /* NY_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_TimesUITests.swift; sourceTree = "<group>"; };
 		6B8F11962581E5F300558884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B8F11A82581E68900558884 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B8F11C12581F4A400558884 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		6B8F11CB2581F53B00558884 /* ArticlesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesView.swift; sourceTree = "<group>"; };
+		6B8F11D12581F62500558884 /* CustomAnchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAnchors.swift; sourceTree = "<group>"; };
+		6B8F11DC2582036A00558884 /* ArticlesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVC.swift; sourceTree = "<group>"; };
+		6B8F11E5258204C900558884 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
+		6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticlesVC+TableViewDelegates.swift"; sourceTree = "<group>"; };
+		6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVCUITEst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +109,8 @@
 		6B8F11712581E5EF00558884 /* NY-Times */ = {
 			isa = PBXGroup;
 			children = (
+				6B8F11BD2581F3F300558884 /* Scenes */,
+				6B8F11BE2581F40700558884 /* Externals */,
 				6B8F11B02581E6E300558884 /* Support files */,
 			);
 			path = "NY-Times";
@@ -112,6 +130,7 @@
 			children = (
 				6B8F11942581E5F300558884 /* NY_TimesUITests.swift */,
 				6B8F11962581E5F300558884 /* Info.plist */,
+				6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */,
 			);
 			path = "NY-TimesUITests";
 			sourceTree = "<group>";
@@ -125,6 +144,91 @@
 				6B8F11A82581E68900558884 /* LaunchScreen.storyboard */,
 			);
 			path = "Support files";
+			sourceTree = "<group>";
+		};
+		6B8F11BD2581F3F300558884 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11C92581F4C000558884 /* Articles */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		6B8F11BE2581F40700558884 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11BF2581F41600558884 /* UIUtil */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		6B8F11BF2581F41600558884 /* UIUtil */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11E4258204AB00558884 /* UIConstants */,
+				6B8F11D02581F5FD00558884 /* Constraints */,
+				6B8F11C02581F42300558884 /* CustomViews */,
+			);
+			path = UIUtil;
+			sourceTree = "<group>";
+		};
+		6B8F11C02581F42300558884 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11C12581F4A400558884 /* RoundedImageView.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		6B8F11C92581F4C000558884 /* Articles */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11ED25820F4600558884 /* ArticleCell */,
+				6B8F11DB2582033F00558884 /* Controller */,
+				6B8F11CA2581F52900558884 /* View */,
+			);
+			path = Articles;
+			sourceTree = "<group>";
+		};
+		6B8F11CA2581F52900558884 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11CB2581F53B00558884 /* ArticlesView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B8F11D02581F5FD00558884 /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11D12581F62500558884 /* CustomAnchors.swift */,
+			);
+			path = Constraints;
+			sourceTree = "<group>";
+		};
+		6B8F11DB2582033F00558884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11DC2582036A00558884 /* ArticlesVC.swift */,
+				6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		6B8F11E4258204AB00558884 /* UIConstants */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11E5258204C900558884 /* UIConstants.swift */,
+			);
+			path = UIConstants;
+			sourceTree = "<group>";
+		};
+		6B8F11ED25820F4600558884 /* ArticleCell */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */,
+			);
+			path = ArticleCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B8F11CC2581F53B00558884 /* ArticlesView.swift in Sources */,
+				6B8F11C22581F4A400558884 /* RoundedImageView.swift in Sources */,
+				6B8F11F72582138B00558884 /* ArticlesVC+TableViewDelegates.swift in Sources */,
+				6B8F11E6258204C900558884 /* UIConstants.swift in Sources */,
 				6B8F11732581E5EF00558884 /* AppDelegate.swift in Sources */,
+				6B8F11D22581F62500558884 /* CustomAnchors.swift in Sources */,
+				6B8F11EF25820F8300558884 /* ArticleTableViewCell.swift in Sources */,
+				6B8F11DD2582036A00558884 /* ArticlesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8F11952581E5F300558884 /* NY_TimesUITests.swift in Sources */,
+				6B8F11FC25821D3B00558884 /* ArticlesVCUITEst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
