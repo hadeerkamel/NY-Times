@@ -12,7 +12,7 @@ class ArticlesVC: UIViewController {
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupTableView()
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
@@ -41,15 +41,15 @@ class ArticlesVC: UIViewController {
         return view
     }()
     
-    let menuBarButton : UIBarButtonItem = {
+    private let menuBarButton : UIBarButtonItem = {
         let button = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_menu_white_18pt"), style: .plain, target: self, action: nil)
         return button
     }()
-    let searchBarButton : UIBarButtonItem = {
+    private let searchBarButton : UIBarButtonItem = {
         let button = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_search_white_24pt"), style: .plain, target: self, action: nil)
         return button
     }()
-    let optionsButton : UIBarButtonItem = {
+    private let optionsButton : UIBarButtonItem = {
         let button = UIBarButtonItem(image: #imageLiteral(resourceName: "baseline_more_vert_white_36pt"), style: .plain, target: self, action: nil)
         return button
     }()
