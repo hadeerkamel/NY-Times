@@ -20,6 +20,13 @@
 		6B8F11EF25820F8300558884 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */; };
 		6B8F11F72582138B00558884 /* ArticlesVC+TableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */; };
 		6B8F11FC25821D3B00558884 /* ArticlesVCUITEst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */; };
+		6B8F12F02582344800558884 /* NYTimesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F12EF2582344800558884 /* NYTimesEndpoint.swift */; };
+		6B8F12FB2582347B00558884 /* MostPopularEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F12FA2582347B00558884 /* MostPopularEndpoint.swift */; };
+		6B8F1300258234AB00558884 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F12FF258234AB00558884 /* Endpoint.swift */; };
+		6B8F1305258234D900558884 /* NetowrkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F1304258234D900558884 /* NetowrkClient.swift */; };
+		6B8F130A2582350100558884 /* URLSessionClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F13092582350100558884 /* URLSessionClient.swift */; };
+		6B8F130F2582352700558884 /* NetowrkErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F130E2582352700558884 /* NetowrkErrorHandling.swift */; };
+		6B8F13142582355000558884 /* GeneralErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F13132582355000558884 /* GeneralErrorHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +66,13 @@
 		6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticlesVC+TableViewDelegates.swift"; sourceTree = "<group>"; };
 		6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVCUITEst.swift; sourceTree = "<group>"; };
+		6B8F12EF2582344800558884 /* NYTimesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYTimesEndpoint.swift; sourceTree = "<group>"; };
+		6B8F12FA2582347B00558884 /* MostPopularEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostPopularEndpoint.swift; sourceTree = "<group>"; };
+		6B8F12FF258234AB00558884 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		6B8F1304258234D900558884 /* NetowrkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetowrkClient.swift; sourceTree = "<group>"; };
+		6B8F13092582350100558884 /* URLSessionClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionClient.swift; sourceTree = "<group>"; };
+		6B8F130E2582352700558884 /* NetowrkErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetowrkErrorHandling.swift; sourceTree = "<group>"; };
+		6B8F13132582355000558884 /* GeneralErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralErrorHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				6B8F11BD2581F3F300558884 /* Scenes */,
+				6B8F12EA258233F700558884 /* Network */,
 				6B8F11BE2581F40700558884 /* Externals */,
 				6B8F11B02581E6E300558884 /* Support files */,
 			);
@@ -229,6 +244,44 @@
 				6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */,
 			);
 			path = ArticleCell;
+			sourceTree = "<group>";
+		};
+		6B8F12EA258233F700558884 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F12EC2582340B00558884 /* Endpoints */,
+				6B8F12EB2582340500558884 /* Clients */,
+				6B8F12EE2582342100558884 /* Error Handling */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6B8F12EB2582340500558884 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F1304258234D900558884 /* NetowrkClient.swift */,
+				6B8F13092582350100558884 /* URLSessionClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		6B8F12EC2582340B00558884 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F12EF2582344800558884 /* NYTimesEndpoint.swift */,
+				6B8F12FA2582347B00558884 /* MostPopularEndpoint.swift */,
+				6B8F12FF258234AB00558884 /* Endpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		6B8F12EE2582342100558884 /* Error Handling */ = {
+			isa = PBXGroup;
+			children = (
+				6B8F130E2582352700558884 /* NetowrkErrorHandling.swift */,
+				6B8F13132582355000558884 /* GeneralErrorHandling.swift */,
+			);
+			path = "Error Handling";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,12 +414,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8F11CC2581F53B00558884 /* ArticlesView.swift in Sources */,
+				6B8F12FB2582347B00558884 /* MostPopularEndpoint.swift in Sources */,
 				6B8F11C22581F4A400558884 /* RoundedImageView.swift in Sources */,
+				6B8F12F02582344800558884 /* NYTimesEndpoint.swift in Sources */,
+				6B8F130F2582352700558884 /* NetowrkErrorHandling.swift in Sources */,
 				6B8F11F72582138B00558884 /* ArticlesVC+TableViewDelegates.swift in Sources */,
 				6B8F11E6258204C900558884 /* UIConstants.swift in Sources */,
 				6B8F11732581E5EF00558884 /* AppDelegate.swift in Sources */,
+				6B8F1305258234D900558884 /* NetowrkClient.swift in Sources */,
+				6B8F130A2582350100558884 /* URLSessionClient.swift in Sources */,
 				6B8F11D22581F62500558884 /* CustomAnchors.swift in Sources */,
 				6B8F11EF25820F8300558884 /* ArticleTableViewCell.swift in Sources */,
+				6B8F1300258234AB00558884 /* Endpoint.swift in Sources */,
+				6B8F13142582355000558884 /* GeneralErrorHandling.swift in Sources */,
 				6B8F11DD2582036A00558884 /* ArticlesVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
