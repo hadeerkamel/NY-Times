@@ -240,11 +240,11 @@
 		6B8F11C92581F4C000558884 /* Articles */ = {
 			isa = PBXGroup;
 			children = (
-				6B8F131825823A6F00558884 /* BusinessLogic */,
-				6B8F11DB2582033F00558884 /* Controller */,
 				6B8F132325823C7F00558884 /* ViewModel */,
-				6B8F11ED25820F4600558884 /* ArticleCell */,
-				6B8F11CA2581F52900558884 /* View */,
+				6B8F11ED25820F4600558884 /* Cell */,
+				6B8F11DB2582033F00558884 /* Controller */,
+				6B8F131E25823C7800558884 /* ArticlesVCPresenter.swift */,
+				6B8F132425823CB300558884 /* AtriclesVCViewDelegate.swift */,
 			);
 			path = Articles;
 			sourceTree = "<group>";
@@ -268,6 +268,7 @@
 		6B8F11DB2582033F00558884 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6B8F11CA2581F52900558884 /* View */,
 				6B8F11DC2582036A00558884 /* ArticlesVC.swift */,
 				6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */,
 			);
@@ -282,19 +283,18 @@
 			path = UIConstants;
 			sourceTree = "<group>";
 		};
-		6B8F11ED25820F4600558884 /* ArticleCell */ = {
+		6B8F11ED25820F4600558884 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */,
 			);
-			path = ArticleCell;
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		6B8F12062582218400558884 /* ArticleDetails */ = {
 			isa = PBXGroup;
 			children = (
 				6B8F12132582249400558884 /* Controller */,
-				6B8F12072582219100558884 /* View */,
 			);
 			path = ArticleDetails;
 			sourceTree = "<group>";
@@ -310,11 +310,12 @@
 		6B8F12132582249400558884 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				6B8F12072582219100558884 /* View */,
 				6B8F1214258224B700558884 /* ArticleDetailsVC.swift */,
 			);
 			path = Controller;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
 		6B8F12EA258233F700558884 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -351,15 +352,6 @@
 				6B8F13132582355000558884 /* GeneralErrorHandling.swift */,
 			);
 			path = "Error Handling";
-			sourceTree = "<group>";
-		};
-		6B8F131825823A6F00558884 /* BusinessLogic */ = {
-			isa = PBXGroup;
-			children = (
-				6B8F131E25823C7800558884 /* ArticlesVCPresenter.swift */,
-				6B8F132425823CB300558884 /* AtriclesVCViewDelegate.swift */,
-			);
-			path = BusinessLogic;
 			sourceTree = "<group>";
 		};
 		6B8F132325823C7F00558884 /* ViewModel */ = {
@@ -581,14 +573,14 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times-NY-TimesUITests/Pods-NY-Times-NY-TimesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-            inputPaths = (
-            );
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times-NY-TimesUITests/Pods-NY-Times-NY-TimesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-               outputPaths = (
-               );
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NY-Times-NY-TimesUITests/Pods-NY-Times-NY-TimesUITests-frameworks.sh\"\n";
@@ -602,16 +594,15 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-TimesTests/Pods-NY-TimesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-            inputPaths = (
-            );
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-TimesTests/Pods-NY-TimesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-               outputPaths = (
-            );
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
-            
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NY-TimesTests/Pods-NY-TimesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -624,14 +615,14 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times/Pods-NY-Times-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-            inputPaths = (
-            );
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times/Pods-NY-Times-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
-            outputPaths = (
-            );
+			outputPaths = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NY-Times/Pods-NY-Times-frameworks.sh\"\n";
