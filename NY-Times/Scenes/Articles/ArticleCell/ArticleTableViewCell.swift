@@ -10,6 +10,11 @@ import UIKit
 class ArticleTableViewCell: UITableViewCell {
 
     static var Identifier = "ArticleTableViewCell"
+    var data: ArticleViewModel? {
+        didSet{
+            setupUIData()
+        }
+    }
     //MARK: - Life cycle -
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -25,6 +30,16 @@ class ArticleTableViewCell: UITableViewCell {
         superview?.layoutSubviews()
         setupViews()
     }
+    //MARK: - Setup UI Data -
+    func setupUIData(){
+        guard let data = data else {return}
+        
+        titleLabel.text = data.title
+        dateLabel.text = data.publishedDate
+        authorLabel.text = data.byLine
+        
+    }
+    
     //MARK: - SetupViews -
 
     private func setupViews(){

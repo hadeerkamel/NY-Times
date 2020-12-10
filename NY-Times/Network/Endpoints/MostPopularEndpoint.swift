@@ -21,12 +21,58 @@ struct MostPopularEndpoint: NYTimesEndpoint {
     
     
     init() {
-        params = ["apikey": "lFE23ciGtw1yd87rYpmug2GZHAnb95Ld"]
+        params = ["api-key": "lFE23ciGtw1yd87rYpmug2GZHAnb95Ld"]
     }
     
 }
 
+
 struct GetMostPopularResponse: Codable {
-   
+    let status: String?
+    let numResults: Int?
+    let results: [ArticleModel]?
+
+    enum CodingKeys: String, CodingKey {
+        case status
+        case numResults = "num_results"
+        case results
+    }
+}
+
+// MARK: - Result
+struct ArticleModel: Codable {
+    let url: String
+    let source,abstract: String
+    let publishedDate, subsection: String
+    let byline: String
+    let title: String
+    let media: [Media]
+    
+
+    enum CodingKeys: String, CodingKey {
+        case url
+        case source,abstract
+        case publishedDate = "published_date"
+        case subsection
+        case byline, title
+        case media
+      
+    }
+}
+
+// MARK: - Media
+struct Media: Codable {
+    let caption: String
+    let mediaMetadata: [MediaMetadatum]
+
+    enum CodingKeys: String, CodingKey {
+        case caption
+        case mediaMetadata = "media-metadata"
+    }
+}
+
+// MARK: - MediaMetadatum
+struct MediaMetadatum: Codable {
+    let url: String
 }
 

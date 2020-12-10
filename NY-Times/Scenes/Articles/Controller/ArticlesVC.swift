@@ -9,10 +9,14 @@ import UIKit
 
 class ArticlesVC: UIViewController {
 
+    //MARK: - Properties -
+    var presenter: ArticlesVCPresenter?
     //MARK: - Life cycle -
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
+        presenter = ArticlesVCPresenterImpl(view: self)
+        presenter?.presentMostPopularArticles()
     }
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
