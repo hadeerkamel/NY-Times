@@ -313,6 +313,8 @@
 				6B8F1214258224B700558884 /* ArticleDetailsVC.swift */,
 			);
 			path = Controller;
+            sourceTree = "<group>";
+        };
 		6B8F12EA258233F700558884 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -579,10 +581,14 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times-NY-TimesUITests/Pods-NY-Times-NY-TimesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+            inputPaths = (
+            );
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times-NY-TimesUITests/Pods-NY-Times-NY-TimesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+               outputPaths = (
+               );
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NY-Times-NY-TimesUITests/Pods-NY-Times-NY-TimesUITests-frameworks.sh\"\n";
@@ -596,11 +602,16 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-TimesTests/Pods-NY-TimesTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+            inputPaths = (
+            );
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-TimesTests/Pods-NY-TimesTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+               outputPaths = (
+            );
 			runOnlyForDeploymentPostprocessing = 0;
+            
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NY-TimesTests/Pods-NY-TimesTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
@@ -613,10 +624,14 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times/Pods-NY-Times-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+            inputPaths = (
+            );
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-NY-Times/Pods-NY-Times-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
+            outputPaths = (
+            );
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NY-Times/Pods-NY-Times-frameworks.sh\"\n";

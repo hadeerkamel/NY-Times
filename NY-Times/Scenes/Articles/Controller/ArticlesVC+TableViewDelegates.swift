@@ -30,6 +30,8 @@ extension ArticlesVC: UITableViewDelegate,UITableViewDataSource{
         return 110
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.navigationController?.pushViewController(ArticleDetailsVC(), animated: true)
+        var vc = ArticleDetailsVC()
+        vc.data = presenter?.getArticleByIndex(index: indexPath.row)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
