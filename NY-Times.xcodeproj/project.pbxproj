@@ -10,7 +10,6 @@
 		6B8F11732581E5EF00558884 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11722581E5EF00558884 /* AppDelegate.swift */; };
 		6B8F117C2581E5F200558884 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B8F117B2581E5F200558884 /* Assets.xcassets */; };
 		6B8F118A2581E5F200558884 /* NY_TimesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11892581E5F200558884 /* NY_TimesTests.swift */; };
-		6B8F11952581E5F300558884 /* NY_TimesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11942581E5F300558884 /* NY_TimesUITests.swift */; };
 		6B8F11A92581E68900558884 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B8F11A82581E68900558884 /* LaunchScreen.storyboard */; };
 		6B8F11C22581F4A400558884 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11C12581F4A400558884 /* RoundedImageView.swift */; };
 		6B8F11CC2581F53B00558884 /* ArticlesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11CB2581F53B00558884 /* ArticlesView.swift */; };
@@ -50,7 +49,6 @@
 		6B8F11892581E5F200558884 /* NY_TimesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_TimesTests.swift; sourceTree = "<group>"; };
 		6B8F118B2581E5F200558884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B8F11902581E5F300558884 /* NY-TimesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NY-TimesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B8F11942581E5F300558884 /* NY_TimesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NY_TimesUITests.swift; sourceTree = "<group>"; };
 		6B8F11962581E5F300558884 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B8F11A82581E68900558884 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B8F11C12581F4A400558884 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
@@ -132,7 +130,6 @@
 		6B8F11932581E5F300558884 /* NY-TimesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6B8F11942581E5F300558884 /* NY_TimesUITests.swift */,
 				6B8F11962581E5F300558884 /* Info.plist */,
 				6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */,
 			);
@@ -415,7 +412,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B8F11952581E5F300558884 /* NY_TimesUITests.swift in Sources */,
 				6B8F11FC25821D3B00558884 /* ArticlesVCUITEst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

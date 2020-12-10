@@ -27,5 +27,4 @@ class ArticleDetailsView: UIView {
     }
     //MARK: - UI Components -
     
-
 }
