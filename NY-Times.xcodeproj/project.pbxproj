@@ -19,6 +19,7 @@
 		6B8F11E6258204C900558884 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11E5258204C900558884 /* UIConstants.swift */; };
 		6B8F11EF25820F8300558884 /* ArticleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */; };
 		6B8F11F72582138B00558884 /* ArticlesVC+TableViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */; };
+		6B8F11FC25821D3B00558884 /* ArticlesVCUITEst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6B8F11E5258204C900558884 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
 		6B8F11EE25820F8300558884 /* ArticleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleTableViewCell.swift; sourceTree = "<group>"; };
 		6B8F11F62582138B00558884 /* ArticlesVC+TableViewDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ArticlesVC+TableViewDelegates.swift"; sourceTree = "<group>"; };
+		6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesVCUITEst.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			children = (
 				6B8F11942581E5F300558884 /* NY_TimesUITests.swift */,
 				6B8F11962581E5F300558884 /* Info.plist */,
+				6B8F11FB25821D3B00558884 /* ArticlesVCUITEst.swift */,
 			);
 			path = "NY-TimesUITests";
 			sourceTree = "<group>";
@@ -381,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B8F11952581E5F300558884 /* NY_TimesUITests.swift in Sources */,
+				6B8F11FC25821D3B00558884 /* ArticlesVCUITEst.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

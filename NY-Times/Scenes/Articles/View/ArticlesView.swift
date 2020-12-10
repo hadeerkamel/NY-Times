@@ -34,6 +34,7 @@ class ArticlesView: UIView{
         tableView.bounces = false
         tableView.tableFooterView = UIView()
         tableView.contentInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        tableView.accessibilityIdentifier = "table-artcliesTableView"
         return tableView
     }()
 }
