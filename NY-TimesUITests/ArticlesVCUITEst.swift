@@ -34,5 +34,16 @@ class ArticlesVCUITEst: XCTestCase {
 
     }
 
+    func testCellTappedThenPushedADetailsVC(){
+            app.launch()
+            
+            let articleTableView = app.tables["table-artcliesTableView"]
+            articleTableView.cells.element(boundBy: 0).tap()
+            
+            let articleDetailsView = app.otherElements["view_articleDetails"]
+            let articleDetailsViewShown = articleDetailsView.waitForExistence(timeout: 5)
+
+            XCTAssert(articleDetailsViewShown)
+        }
     
 }
